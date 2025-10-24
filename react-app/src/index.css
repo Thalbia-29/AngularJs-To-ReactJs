@@ -1,0 +1,56 @@
+/* Minimal styles for header and error messages */
+.navbar { margin-bottom: 20px; }
+.err-style { color: #a94442; margin-top: 5px; }
+.credit-card-box { border: 1px solid #e0e0e0; padding: 15px; border-radius: 4px; }
+.input-group-addon { width: 40px; }
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .panel-heading .display-tr { display: flex; justify-content: space-between; align-items: center; }
+}
+
+ .healthImg{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+ }   
+ /* .product-card{
+    background: #f0f0f0;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+padding: 20px;
+width: 240px;
+position: relative;
+height: 450px;
+ } */
+
+/* Use public/background.svg as the full-page background */
+html, body, #root {
+  height: 100%;
+}
+/* Full-page sizing - background will be set at runtime to avoid bundler resolving public assets */
+html, body, #root {
+  height: 100%;
+}
+body {
+  /* Fallback color */
+  background-color: #f8f9fb;
+  /* Use layered CSS gradients to approximate the SVG background from public/background.svg */
+  background-image:
+    radial-gradient(circle at 75% 10%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 240px, transparent 241px),
+    radial-gradient(circle at 18% 78%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 180px, transparent 181px),
+    radial-gradient(circle at 56% 46%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 120px, transparent 121px),
+    linear-gradient(180deg, #6dd5fa 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.btnn{
+  margin-left: 5px;
+  height: 40px;
+    font-size: 20px;
+}

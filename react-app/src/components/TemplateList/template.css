@@ -1,0 +1,49 @@
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .credit-card-box{
+    width:500px;
+    margin-left: 90px;
+    margin-top: 10px;
+    border: solid ;
+} */
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    /* margin-left: 186px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:18px;
+    align-items: stretch;
+    }
+
+.product-card {
+   background: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 325px;
+    position: relative;
+    /* height: 450px; */
+}
+.title-card{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-size: 24px;
+    height: 80px !important;
+    text-align: center;
+    width: 100%;
+    line-height: 28px;
+    min-height: 80px;
+    
+}

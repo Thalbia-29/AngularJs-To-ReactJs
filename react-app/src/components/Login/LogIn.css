@@ -1,0 +1,139 @@
+  body {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    /* background-color:white; */
+    /* background-image: url('../../../assets/images/color-splash.jpg'); */
+    background-color: #f8f9fb;
+  /* Use layered CSS gradients to approximate the SVG background from public/background.svg */
+  background-image:
+    radial-gradient(circle at 75% 10%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 240px, transparent 241px),
+    radial-gradient(circle at 18% 78%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 180px, transparent 181px),
+    radial-gradient(circle at 56% 46%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 120px, transparent 121px),
+    linear-gradient(180deg, #6dd5fa 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+   }
+  .btns
+  {
+   outline:0;
+   border:none;
+   border-top:none;
+   border-bottom:none;
+   border-left:none;
+   border-right:none;
+   box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+   color: black;
+   margin-left: 120px;
+   background-color: rgb(11, 89, 134);
+   height: 40px;
+font-size: 20px;  
+}
+
+.btns :hover { opacity: 0.95; }
+
+button { cursor: pointer }
+
+
+  .container login-hero{
+    background-color: white;
+    width: 100px;
+    height: 50%;
+    margin-left: 40%;
+
+
+  }
+
+/* translucent panel for forms */
+.frosted-panel {
+  width: 620px;
+  height: 600px;
+    max-width: 92%;
+    padding: 25px;
+    border-radius: 10px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;       
+    background-repeat: repeat;
+    background-color: #fff;
+}
+  .form-signin {
+    max-width: 500px;
+    padding: 30px;
+    margin: 0 auto;
+      margin-top:50px;
+      background-color: white;
+      margin-bottom: 200px;
+  }
+  .form-signin  {
+    margin-bottom: 10px;
+    box-shadow:inset 2px -3px rgba(16, 106, 197, 0.15);
+     border-style: solid;
+    border-color: #000;
+    border-radius: 10px;
+    height: 450px;
+    
+  }
+  .form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    /* margin-bottom: -1px; */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: solid;
+    border-color: #000;
+  }
+  .form-signin input[type="password"] {
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-style: solid;
+    border-top-style: solid;
+    border-color: rgb(0,0,0);
+    
+  }
+  .form-signin-heading {
+    color: black;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    margin-top: 50px;
+  }
+
+  .form-signin-fields {
+    color: black;
+    text-align: left;
+    font-size: 25px;
+    /* text-shadow: 0 2px 2px rgba(0,0,0,0.5); */
+  }
+
+  .form-groups {
+    /* margin-bottom: 15px; */
+    margin-left: 60px;
+    align-items: center;
+  }

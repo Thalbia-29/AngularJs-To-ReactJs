@@ -1,0 +1,49 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #0f0404;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-left: 800px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #1b0654;
+}
+
+.brand{
+    font-size: 35px;
+
+}
+.app-header .brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn-logout {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.btn-logout:hover { opacity: 0.95; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* keeps it above other elements */
+}
+body {
+  margin: 0; /* removes default margin */
+  padding-top: 80px; /* add space equal to header height to prevent overlap */
+}
