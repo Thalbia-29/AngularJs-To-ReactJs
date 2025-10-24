@@ -1,0 +1,48 @@
+﻿{
+  "template_data": [
+    {
+      "Name": "Log-In Template",
+      "Features": [ "Interactive UX", "Awesome design", "Budget friendly" ],
+      "Description": "A simple yet attractive LogIn template",
+      "Price": "$10",
+      "Src": "../../../assets/images/login.jpg"
+    },
+    {
+      "Name": "Sign-Up Template",
+      "Features": [ "Interactive UX", "Awesome design", "Budget friendly" ],
+      "Description": "A simple yet attractive Sign-Up template",
+      "Price": "$10",
+      "Src": "../../../assets/images/signup.jpg"
+
+    },
+    {
+      "Name": "e-Commerce Template",
+      "Features": [ "Interactive UX", "PayPal Enabled", "Secure Payment" ],
+      "Description": "A simple yet attractive e-Commerce template",
+      "Price": "$30",
+      "Src": "../../../assets/images/ecommerce.png"
+
+    },
+    {
+      "Name": "Contact-Us Template",
+      "Features": [ "Interactive UX", "Awesome design", "Budget friendly" ],
+      "Description": "A simple yet attractive Contact template",
+      "Price": "$10",
+      "Src": "../../../assets/images/contactus.jpg"
+    },
+    {
+      "Name": "About-Us Template",
+      "Features": [ "Interactive UX", "Awesome design", "Budget friendly" ],
+      "Description": "A simple yet attractive About template",
+      "Price": "$10",
+      "Src": "../../../assets/images/aboutus.jpg"
+    },
+    {
+      "Name": "Buy-Now Template",
+      "Features": [ "Interactive UX", "PayPal Enabled", "Secure Payment" ],
+      "Description": "A simple yet attractive Shopping template",
+      "Price": "$30",
+      "Src": "../../../assets/images/buynow.jpg"
+    }
+  ]
+}
