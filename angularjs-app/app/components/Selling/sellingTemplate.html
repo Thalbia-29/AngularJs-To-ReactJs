@@ -1,0 +1,16 @@
+﻿<div>
+    <br />
+    <br />
+    <img class="img-circle img-responsive img-center" src="{{data.Src}}" alt="" />
+    <h3>
+     {{data.Name}}
+     <small>{{data.Price}}</small>
+    </h3>
+    <p class="h4">{{data.Description}}</p>
+	<p class="h4">Features</p>
+    <ul>
+        <li class="h5" ng-repeat="ftr in data.Features">{{ftr}}</li>
+    </ul>    
+    <br />
+    <br />	
+</div>

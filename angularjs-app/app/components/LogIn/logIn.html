@@ -1,0 +1,35 @@
+﻿    <div class="container" style="background-image:url('../../../assets/images/color-splash.jpg')" >
+        <form  name="form" novalidate class="form-signin">
+            <h1 class="form-signin-heading text-muted">Sign In</h1>
+            <br />
+            <br />
+            <div class="form-group">
+            <h4 class="form-signin-heading text-muted">User Name</h4><input type="text" 
+                   class="form-control"
+                   name="username"
+                   ng-model="user.username"
+                   style="width:350px"
+                   required
+                   autofocus="" >
+                <div class="err-style-login" ng-show="form.$submitted || form.username.$touched">
+                    <span ng-show="form.username.$error.required">Enter the User Name</span>
+                </div>
+             </div>
+            <div class="form-group">
+                <h4 class="form-signin-heading text-muted">Password</h4>
+                <input type="password"
+                       class="form-control"
+                       name="password"
+                       style="width:350px"
+                       ng-model="user.password"
+                       required="">
+                <div class="err-style-login" ng-show="form.$submitted || form.password.$touched">
+                    <span ng-show="form.password.$error.required">Enter your password.</span>
+                </div>
+           </div>
+                <br />
+                <button class="btn btn-lg btn-primary btn-block" ng-disabled="!form.$valid" ng-click="SubmitForm(form)" style="width:250px" type="submit">
+                    Sign In
+                </button>
+        </form>
+     </div>

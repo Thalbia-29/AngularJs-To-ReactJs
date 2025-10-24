@@ -1,0 +1,29 @@
+﻿<div>
+    <h3 class="h3" style="font-weight:bold">Contact Us</h3>
+    <form name="form" novalidate>
+        <div class="half left cf">
+            <input class="form-control" type="text"  name="name"    ng-model="contact.name"     placeholder="Name" required>
+            <span class="err-style" ng-show="form.$submit || form.name.$touched">
+                <span ng-show="form.name.$error.required">Please enter your name.</span>
+            </span>
+            <br />
+            <input class="form-control" type="email" name="demail"   ng-model="contact.email"    placeholder="Email address" required>
+            <div class="err-style" ng-show="form.$submitted || form.demail.$touched">
+                <span ng-show="form.demail.$error.required">Please enter your e-Mail.</span>
+                <span ng-show="form.demail.$error.email">This is not a valid email.</span>
+            </div>
+            <br />
+            <input class="form-control" type="text"  name="subject" ng-model="contact.subject"  placeholder="Subject" required>
+            <span class="err-style" ng-show="form.$submit || form.subject.$touched">
+                <span ng-show="form.subject.$error.required">Please enter the subject.</span>
+            </span>
+            <br />
+            <textarea class="form-control" name="message" type="text" ng-model="contact.message" placeholder="Message" required></textarea> 
+            <span class="err-style" ng-show="form.$submit || form.message.$touched">
+                <span ng-show="form.message.$error.required">Please type your message.</span>
+            </span>
+            <br /> 
+        </div>                     
+        <input type="submit" ng-disabled="!form.$valid"  class="btn btn-primary" value="Submit" ng-click="ContactUs(form)">
+    </form>
+</div>

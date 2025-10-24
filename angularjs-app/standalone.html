@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Template Selling Website - Frontend Only Demo">
+    <meta name="author" content="">
+
+    <title>Template Selling Website - Demo</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="../shell/assets/css/dashboard.css" rel="stylesheet" />
+    <link href="../shell/assets/css/LogIn.css" rel="stylesheet" />
+    <link href="../shell/assets/css/round-about.css" rel="stylesheet" />
+    <link href="../shell/assets/css/style.css" rel="stylesheet" />
+    <link href="../shell/assets/css/payment.css" rel="stylesheet" />
+    <link href="../shell/assets/css/error.css" rel="stylesheet" />
+    
+    <style>
+        .demo-notice {
+            background-color: #f0f8ff;
+            border: 2px solid #4CAF50;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .demo-notice h3 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .demo-notice p {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body ng-app="TemplateSellingApp" ng-controller="TemplateController">
+    
+    <!-- Demo Notice -->
+    <div class="demo-notice">
+        <h3>🎉 Frontend Demo Mode</h3>
+        <p>This application is running in standalone frontend mode with hardcoded authentication.</p>
+        <p><strong>Demo Credentials:</strong> Username: <code>admin</code> | Password: <code>password</code></p>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" ui-sref="buy">Template Selling Website</a>
+               <a class="navbar-brand" ui-sref="login">Log-In</a>
+               <a class="navbar-brand" href="#" ui-sref="login" ng-click="LogOut()">Log-Out</a>
+            </div>            
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">           
+                    <li><a ui-sref="buy">Buy</a></li>       
+                    <li><a ui-sref="contact">Contact</a></li>
+                    <li><a ui-sref="about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+    </div>
+    
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div ui-view class="col-sm-8 col-md-8"></div>
+    </div>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
+    
+    <!-- Application Scripts -->
+    <script src="app/components/About/AboutModule.js"></script>
+    <script src="app/components/About/AboutController.js"></script>   
+    <script src="app/components/About/AboutRoute.js"></script>
+    <script src="app/components/About/AboutService.js"></script>
+    
+    <script src="app/components/Contact/ContactModule.js"></script>
+    <script src="app/components/Contact/ContactController.js"></script>
+    <script src="app/components/Contact/ContactRoute.js"></script>
+    <script src="app/components/Contact/ContactService.js"></script>
+
+    <script src="app/components/Selling/SellingModule.js"></script>
+    <script src="app/components/Selling/SellingController.js"></script>
+    <script src="app/components/Selling/SellingRoute.js"></script>
+    <script src="app/components/Selling/SellingService.js"></script>
+    <script src="app/components/Selling/SellingTemplateDirective.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/app.service.js"></script>
+    <script src="app/app.controller.js"></script>
+    <script src="app/app.constants.js"></script>
+    <script src="app/app.route.js"></script>
+    <script src="app/app.run.js"></script>
+    <script src="app/app.values.js"></script>
+
+</body>
+</html>

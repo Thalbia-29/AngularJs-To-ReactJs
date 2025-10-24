@@ -1,0 +1,15 @@
+﻿<div ui-view>
+    <h3 class="h3" style="font-weight:bold">Choose the template that matches your business need</h3>
+    <br />
+    <p class="h5" style="font-weight:bold">We have the best templates in store for you. Browse through a variety of stunning web templtes that are intuitive, easy to use and affordable. 
+    You can securely buy the template of your choice in our online store. </p>
+    <input type="button" ng-click="getDetails()" value="Browse our templates" class="btn btn-warning" />
+    <div>
+        <ul class="list-inline">
+            <li ng-repeat="data in templateDetails">                
+                <template-info data="data"></template-info>
+                <input type="button" value="Buy Now" ui-sref="buy.buynow" ng-click="prefillTemplateData(data)" class="btn btn-primary" />
+            </li>
+        </ul>
+    </div>
+</div>

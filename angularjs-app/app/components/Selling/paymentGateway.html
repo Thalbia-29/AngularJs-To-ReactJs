@@ -1,0 +1,89 @@
+﻿<h3 class="h3" style="font-weight:bold">Buy your favourite template</h3>
+<br />
+<br />
+<template-info data="templateObj"></template-info>
+<br />
+<div class="container">
+    <panel class="panel-default">
+        <div class="col-xs-12 col-md-4">
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table">
+                    <div class="row display-tr">
+                        <h3 class="panel-title display-td">Payment Details</h3>
+                        <div class="display-td">
+                            <img class="img-responsive pull-right" src="../../../assets/images/card.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form name="form" novalidate>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input type="tel"
+                                               ng-model="card.number"
+                                               class="form-control"
+                                               name="cardNumber"
+                                               placeholder="4xxx xxxx xxxx xxxx"
+                                               autocomplete="cc-number"                                          
+                                               ng-pattern="/^4[0-9]{15}$/"
+                                               required />
+                                        <span class="input-group-addon"></span>
+                                    </div>
+                                    <span class="err-style" ng-show="form.$submit || form.cardNumber.$touched">
+                                        <span class="err-style" ng-show="form.cardNumber.$error.pattern">Not an valid Card Number</span>
+                                        <span class="err-style" ng-show="form.cardNumber.$error.required">This field is required!</span>
+                                    </span>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input type="tel"
+                                           class="form-control"
+                                           ng-model="card.expirey"
+                                           name="cardExpiry"
+                                           placeholder="MM / YYYY"
+                                           autocomplete="cc-exp"
+                                           ng-pattern="/^(0[1-9]|1[0-2])/(19|2[0-1])\d{2}$/"
+                                           required />
+                                </div>
+                                <span class="err-style" ng-show="form.$submit || form.cardExpiry.$touched">
+                                    <span class="err-style" ng-show="form.cardExpiry.$error.pattern">Not an valid Expiery Date</span>
+                                    <span class="err-style" ng-show="form.cardExpiry.$error.required">This field is required!</span>
+                                </span>
+                                </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input type="tel"
+                                           class="form-control"
+                                           name="cardCVC"
+                                           placeholder="CVV"
+                                           ng-model="card.cvv"
+                                           autocomplete="cc-csc"
+                                           ng-pattern="/^[0-9]{3}$/"
+                                           required />
+                                </div>
+                                <span class="err-style" ng-show="form.$submit || form.cardCVC.$touched">
+                                    <span class="err-style" ng-show="form.cardCVC.$error.pattern">Not an valid CVV!</span>
+                                    <span class="err-style" ng-show="form.cardCVC.$error.required">This field is required!</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="subscribe btn btn-success btn-lg btn-block" ng-disabled="!form.$valid" ng-click="MakePayment(form)" type="button">Pay Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>     
+        </div>
+    </panel>
+</div>
