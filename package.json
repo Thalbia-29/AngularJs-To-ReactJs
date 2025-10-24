@@ -1,0 +1,8 @@
+{
+  "name": "angularjs-poc-microfrontends",
+  "private": true,
+  "workspaces": ["angularjs-app", "react-app", "shell"],
+  "scripts": {
+    "start": "echo \"Run individual apps from their folders (see README)\""
+  }
+}
