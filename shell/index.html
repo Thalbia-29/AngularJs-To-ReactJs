@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Application Shell</title>
+</head>
+<body>
+  <h1>Shell</h1>
+  <nav>
+    <a href="#angularjs">AngularJS App</a> | <a href="#react">React App</a>
+  </nav>
+
+  <div id="angularjs" style="border:1px solid #ccc; padding:10px; margin:10px;">
+    <!-- The AngularJS microfrontend will be mounted here (iframe or script injection) -->
+    <p>AngularJS app can be served from /angularjs-app and embedded here.</p>
+  </div>
+
+  <div id="react" style="border:1px solid #ccc; padding:10px; margin:10px;">
+    <!-- The React microfrontend will be mounted here -->
+    <div id="react-root">React microfrontend placeholder</div>
+  </div>
+
+  <script src="./shell.js"></script>
+</body>
+</html>
